@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "YelpAPI"
-  s.version          = "3.0.0"
+  s.version          = "3.0.1"
   s.summary          = "Objective-C client library for accessing the Yelp Public API."
 
   s.description      = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/Yelp/yelp-ios"
   s.license          = 'MIT'
   s.author           = 'Yelp'
-  s.source           = { :git => "https://github.com/Yelp/yelp-ios.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/SMCorporation/yelp-ios.git", :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
