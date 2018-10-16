@@ -10,12 +10,14 @@
 
 @class YLPLocation;
 @class YLPCategory;
+@class YLPWorkingDay;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface YLPBusiness : NSObject
 
 @property (nonatomic, getter=isClosed, readonly) BOOL closed;
+@property (nonatomic, getter=isOpened, readonly) BOOL open;
 
 @property (nonatomic, readonly, nullable, copy) NSURL *imageURL;
 @property (nonatomic, readonly, copy) NSURL *URL;
@@ -29,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, readonly, copy) NSArray<YLPCategory *> *categories;
 @property (nonatomic, readonly, copy) NSArray<NSString *> *photos;
+@property (nonatomic, readonly, copy) NSArray<YLPWorkingDay *> *workingDays;
 
 @property (nonatomic, readonly) YLPLocation *location;
 

@@ -11,6 +11,8 @@
 #import "YLPCoordinate.h"
 #import "YLPLocation.h"
 #import "YLPResponsePrivate.h"
+#import "YLPWorkingDay.h"
+
 
 @implementation YLPBusiness
 
@@ -35,6 +37,9 @@
         _location = [[YLPLocation alloc] initWithDictionary:businessDict[@"location"] coordinate:coordinate];
         
         _photos = businessDict[@"photos"];
+        NSDictionary *hours = [businessDict[@"hours"] firstObject];
+        _open = [hours[@"is_open_now"] boolValue];
+        _workingDays = [self.class workingDaysFromJSONArray:hours[@"open"]];
     }
     return self;
 }
@@ -45,6 +50,14 @@
         [mutableCategories addObject:[[YLPCategory alloc] initWithDictionary:category]];
     }
     return mutableCategories;
+}
+
++ (NSArray<YLPWorkingDay *> *)workingDaysFromJSONArray:(NSArray *)daysJSON {
+    NSMutableArray<YLPWorkingDay *> *mutableDays = [NSMutableArray new];
+    for (NSDictionary *day in daysJSON) {
+        [mutableDays addObject:[[YLPWorkingDay alloc] initWithDictionary:day]];
+    }
+    return mutableDays;
 }
 
 + (YLPCoordinate *)coordinateFromJSONDictionary:(NSDictionary *)coordinatesDict {

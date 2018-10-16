@@ -12,6 +12,7 @@
 #import "YLPReview.h"
 #import "YLPSearch.h"
 #import "YLPUser.h"
+#import "YLPWorkingDay.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -47,5 +48,10 @@ NS_ASSUME_NONNULL_BEGIN
 @interface YLPUser ()
 - (instancetype)initWithDictionary:(NSDictionary *)userDict;
 @end
+
+@interface YLPWorkingDay ()
+- (instancetype)initWithDictionary:(NSDictionary *)dayDict;
+@end
+
 
 NS_ASSUME_NONNULL_END

@@ -24,8 +24,10 @@
 #pragma mark UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    #warning Fill in the API key below with your developer v3 key.
-    self.client = [[YLPClient alloc] initWithAPIKey:@""];
+    self.client = [[YLPClient alloc] initWithAPIKey:@"0DQ588MgqUFqk3AxVzGPQHG6gVXP5CYsiOi3vBU-rrGPwdbdlXxl36vaFe9Z7dDaNKkxHAocphrFHFo8RSYCe_Ii0UYGjVqVYoGs2ip75crerPy8Zb_PDHjKiaDEW3Yx"];
+    [self.client businessWithId:@"hui-restaurant-and-bar-new-york" completionHandler:^(YLPBusiness * _Nullable business, NSError * _Nullable error) {
+        
+    }];
 
     return YES;
 }

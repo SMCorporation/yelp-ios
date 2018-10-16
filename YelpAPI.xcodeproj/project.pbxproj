@@ -69,6 +69,10 @@
 		13D8661E1DDE402D0051C1A0 /* NSDictionary+YLPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 13D8661C1DDE402D0051C1A0 /* NSDictionary+YLPUtils.m */; };
 		2938CD961893BBC9FB96A9A1 /* Pods_YelpAPI_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940F602628A3DC514173CCBB /* Pods_YelpAPI_Example.framework */; };
 		4D1C48BD7C6555E51CC7DB7B /* Pods_YelpAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A2DA62F3AB4E9CED8852687 /* Pods_YelpAPI.framework */; };
+		50FE40DB21762AA300119A11 /* YLPWorkingDay.h in Headers */ = {isa = PBXBuildFile; fileRef = 50FE40D921762AA300119A11 /* YLPWorkingDay.h */; };
+		50FE40DC21762AA300119A11 /* YLPWorkingDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE40DA21762AA300119A11 /* YLPWorkingDay.m */; };
+		50FE40DD21762AA300119A11 /* YLPWorkingDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE40DA21762AA300119A11 /* YLPWorkingDay.m */; };
+		50FE40DE21762AA300119A11 /* YLPWorkingDay.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FE40DA21762AA300119A11 /* YLPWorkingDay.m */; };
 		E649614BDA7B6533CF642746 /* Pods_YelpAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C801DC94688578238D1B1D4D /* Pods_YelpAPITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -178,6 +182,8 @@
 		13BE49681D2056C70002262E /* YLPQueryTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLPQueryTestCase.m; sourceTree = "<group>"; };
 		13D8661C1DDE402D0051C1A0 /* NSDictionary+YLPUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+YLPUtils.m"; sourceTree = "<group>"; };
 		2E0DC5F670084B64ECD1DB90 /* Pods-YelpAPI_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpAPI_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-YelpAPI_Example/Pods-YelpAPI_Example.release.xcconfig"; sourceTree = "<group>"; };
+		50FE40D921762AA300119A11 /* YLPWorkingDay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YLPWorkingDay.h; sourceTree = "<group>"; };
+		50FE40DA21762AA300119A11 /* YLPWorkingDay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YLPWorkingDay.m; sourceTree = "<group>"; };
 		57A6A7BEE7B82D4C749B5DA5 /* Pods-YelpAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YelpAPITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YelpAPITests/Pods-YelpAPITests.release.xcconfig"; sourceTree = "<group>"; };
 		8A2DA62F3AB4E9CED8852687 /* Pods_YelpAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		940F602628A3DC514173CCBB /* Pods_YelpAPI_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YelpAPI_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -320,6 +326,8 @@
 				134DA9AE1CBF253B008DD68F /* YLPSearch.m */,
 				134DA9AF1CBF253B008DD68F /* YLPUser.h */,
 				134DA9B01CBF253B008DD68F /* YLPUser.m */,
+				50FE40D921762AA300119A11 /* YLPWorkingDay.h */,
+				50FE40DA21762AA300119A11 /* YLPWorkingDay.m */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -460,6 +468,7 @@
 				134DA9B31CBF253B008DD68F /* YLPClient+PhoneSearch.h in Headers */,
 				13BE49641D2037070002262E /* YLPQuery.h in Headers */,
 				13BE49671D203E000002262E /* YLPQueryPrivate.h in Headers */,
+				50FE40DB21762AA300119A11 /* YLPWorkingDay.h in Headers */,
 				134DA9B91CBF253B008DD68F /* YLPClientPrivate.h in Headers */,
 				134DA9D61CBF253B008DD68F /* YLPResponsePrivate.h in Headers */,
 			);
@@ -696,6 +705,7 @@
 				134DA9DC1CBF253B008DD68F /* YLPUser.m in Sources */,
 				134DA9D11CBF253B008DD68F /* YLPLocation.m in Sources */,
 				134DA9B81CBF253B008DD68F /* YLPClient.m in Sources */,
+				50FE40DC21762AA300119A11 /* YLPWorkingDay.m in Sources */,
 				134DA9B61CBF253B008DD68F /* YLPClient+Search.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -706,6 +716,7 @@
 			files = (
 				134DAA131CBF2D1B008DD68F /* YLPSearchClientTestCase.m in Sources */,
 				130408EE1DBC0D7B00E44AC6 /* YLPReviewsClientTestCase.swift in Sources */,
+				50FE40DD21762AA300119A11 /* YLPWorkingDay.m in Sources */,
 				134DAA141CBF2D1B008DD68F /* YLPCoordinateTestCase.m in Sources */,
 				134DAA101CBF2D1B008DD68F /* YLPClientTestCase.m in Sources */,
 				134DAA121CBF2D1B008DD68F /* YLPPhoneSearchClientTestCase.m in Sources */,
@@ -725,6 +736,7 @@
 				13640F491DB2CAA1005F551B /* YLPSearchTableViewController.m in Sources */,
 				13640F451DB2CAA1005F551B /* YLPBusinessViewController.m in Sources */,
 				13640F481DB2CAA1005F551B /* YLPPhoneSearchTableViewController.m in Sources */,
+				50FE40DE21762AA300119A11 /* YLPWorkingDay.m in Sources */,
 				13640F191DB2C7ED005F551B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
